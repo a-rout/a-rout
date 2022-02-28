@@ -1,4 +1,4 @@
-<h1 align='center'> Hi! :wave:</h1>
+<h1 align='center'> Hello! :wave:</h1>
 <p align='center'>
 I'm Ashutosh.<br>I’m trying to make this README.md look awesome.
 </p>
