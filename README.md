@@ -1,6 +1,6 @@
 <h1> Hi there! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"></h1>
 <p>
-I'm a software engineer with a passion for open-source. I love contributing to open-source projects and learning from the amazing community of developers out there. 
+I am a tech enthusiast with a strong interest in open-source. I am particularly drawn to contributing to open-source projects and learning from the talented community of developers who are involved in this space. Open-source is a source of great excitement and inspiration for me, and I love the opportunity to be a part of this community.
   
 [![Github](https://img.shields.io/badge/-Github-000?style=flat&logo=Github&logoColor=white)](https://github.com/a-rout) [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)]( https://www.linkedin.com/in/a-rout/) [![Telegram](https://img.shields.io/badge/-Telegram-white?style=flat&logo=Telegram&logoColor=26A5E4)](https://t.me/theFault)
 
