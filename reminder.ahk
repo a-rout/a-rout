@@ -2,47 +2,47 @@
 #SingleInstance Force
 
 ; Initialize variables
-SnoozeTime := 15  ; Default snooze time in minutes
+global SnoozeTime := 2  ; Default snooze time in minutes
 
-; Set timer to check every day
-SetTimer CheckForFriday, 60000  ; Check every minute
-
-; CheckForFriday() {
-;     if (A_WDay = 7) && (A_Hour = 11) && (A_Min = 0) {  ; Friday at 11:00 AM
-;         ShowReminder()
-;     }
-; }
-
-CheckForFriday()
+; Set timer to check every minute
+; SetTimer CheckForFriday, 60000
 
 CheckForFriday() {
-    if (A_WDay = 7){
+    if (A_WDay = 7) {  ; Friday at 11:00 AM
         ShowReminder()
     }
 }
 
 ShowReminder() {
-    ; Create reminder GUI
-    reminderGui := Gui("+AlwaysOnTop", "Timesheet Reminder")
+    reminderGui := Gui("+AlwaysOnTop +ToolWindow -MinimizeBox", "Reminder!")
+    reminderGui.SetFont("s10 cBlack", "Segoe UI")  ; Default font
+    reminderGui.SetFont("s12 Bold cRed", "Segoe UI")
+    reminderGui.MarginX := 20
+    reminderGui.MarginY := 20
+
     reminderGui.SetFont("s10")
-    reminderGui.Add("Text",, "Don't forget to fill your timesheet!")
+    reminderGui.Add("Text",, "PLEASE FILL THE TIMESHEET & SUBMIT!")
     
-    ; Add buttons
-    reminderGui.Add("Button", "x10 y60 w80", "Done").OnEvent("Click", (*) => reminderGui.Destroy())
-    reminderGui.Add("Button", "x100 y60 w80", "Snooze").OnEvent("Click", (*) => Snooze(reminderGui))
-    reminderGui.Add("Button", "x190 y60 w80", "Cancel").OnEvent("Click", (*) => reminderGui.Destroy())
+    reminderGui.Add("Button", "x40 y60 w80", "Done").OnEvent("Click", (*) => (
+        reminderGui.Destroy(),
+        ExitApp()
+    ))
+    reminderGui.Add("Button", "x150 y60 w80", "Snooze").OnEvent("Click", (*) => Snooze(reminderGui))
+    ; reminderGui.Add("Button", "x190 y60 w80", "Cancel").OnEvent("Click", (*) => (
+    ;     reminderGui.Destroy(),
+    ;     ExitApp()
+    ; ))
     
-    ; Show the GUI
-    reminderGui.Show()
-    
-    ; Play notification sound
+    reminderGui.Show() 
     SoundPlay("*-1")
 }
+
+
 
 Snooze(gui) {
     global SnoozeTime
     gui.Destroy()
-    
-    ; Set timer to show reminder again after snooze time
     SetTimer () => ShowReminder(), -SnoozeTime * 60000
 }
+
+CheckForFriday()
