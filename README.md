@@ -1,4 +1,4 @@
-<h1> Hi there! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"></h1>
+<h1> Hola! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"></h1>
 <p>
 Hooked on the open-source scene. Here to steal brilliance from dev wizards.!
   
