@@ -1,6 +1,6 @@
 <h1> Hi there! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px"></h1>
 <p>
-Here to steal brilliance from dev wizards.!
+Hooked on the open-source scene. Here to steal brilliance from dev wizards.!
   
 [![Github](https://img.shields.io/badge/-Github-000?style=flat&logo=Github&logoColor=white)](https://github.com/a-rout) [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=Linkedin&logoColor=white)]( https://www.linkedin.com/in/a-rout/) [![Telegram](https://img.shields.io/badge/-Telegram-white?style=flat&logo=Telegram&logoColor=26A5E4)](https://t.me/theFault)
 
